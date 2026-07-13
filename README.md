@@ -89,7 +89,7 @@ RESULT-->Second Class, Standard Class, First Class, Same Day
 
 ## 🛠 Tech Stack
 - SQLite (SQL queries)
-- Power BI (installed, planned for visualization)
+- Power BI (dashboard created from the same dataset)
 - GitHub (documentation & portfolio)
 
 ## 🚀 Future Work
