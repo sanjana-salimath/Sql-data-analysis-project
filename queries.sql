@@ -1,3 +1,7 @@
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+--Superstore Sales Analysis SQL Queries
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 ### Query 1: Count Total Orders
 ```sql
 SELECT COUNT(*) FROM orders;
@@ -55,3 +59,10 @@ SELECT Region, COUNT(*) AS TotalOrders
 FROM orders
 GROUP BY Region;
 RESULT-->Central → 2,277 orders
+East → 2,785 orders
+South → 1,598 orders
+West → 3,140 orders
+### Query 10: Distinct Shipping Modes
+```sql
+SELECT DISTINCT "Ship Mode" FROM orders;
+RESULT-->Second Class, Standard Class, First Class, Same Day
