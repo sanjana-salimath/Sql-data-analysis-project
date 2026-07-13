@@ -34,3 +34,24 @@ East → 669,518.73
 South → 389,151.46
 West → 710,219.68
 ### Query 7: Count of Unique Customers
+```sql
+SELECT COUNT(DISTINCT "Customer ID") FROM orders;
+RESULT-->There are 793 unique customers in the dataset.
+### Query 8: Top 5 Cities by Sales
+```sql
+SELECT City, SUM(Sales) AS TotalSales
+FROM orders
+GROUP BY City
+ORDER BY TotalSales DESC
+LIMIT 5;
+RESULT-->New York City → 252,462.55
+Los Angeles → 173,420.18
+Seattle → 116,106.32
+San Francisco → 109,041.12
+Philadelphia → 108,841.75
+### Query 9: Total Orders by Region
+```sql
+SELECT Region, COUNT(*) AS TotalOrders
+FROM orders
+GROUP BY Region;
+RESULT-->Central → 2,277 orders
